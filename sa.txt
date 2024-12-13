@@ -4,21 +4,22 @@
 int main()
 {
   int a=10,b=20,c;
-  printf("Befor swapping A=%d B=%d",a,b);
+  printf("Before swapping A=%d B=%d",a,b);
   c=a;
   a=b;
   b=c;
   print("After swapping a=%d B=%d",a,b);
 }
 
-//same program using scanf
+//SWAPPING of 2 numbers without using third variable
 
 #include<stdio.h>
 int main()
 {
-  int a,b,c;
-  printf("enter the value of A and B\n");
-  scanf("%d%d",&a,&b);
-  c=a+b;
-  print("RESULT=%d",c);
+  int a=10,b=20;
+  printf("Before swapping A=%d B=%d",a,b);
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  print("After swapping A=%d B=%d",a,b);
 }
